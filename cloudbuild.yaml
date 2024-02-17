@@ -1,0 +1,12 @@
+steps:
+  # Step 1: Build the Docker image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/$PROJECT_ID/aman-100890534/dockerfile:$SHORT_SHA', 'Assignment 1 Files/']
+ 
+ 
+  # Step 2: Push the Docker image to the Google Artifact Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'us-central1-docker.pkg.dev/$PROJECT_ID/aman-100890534/dockerfile:$SHORT_SHA']
+ 
+options:
+  logging: GCS_ONLY
