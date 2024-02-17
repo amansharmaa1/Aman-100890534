@@ -5,7 +5,7 @@ steps:
 
   # Step 2: Push the Docker image to the Google Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'us-central1-docker.pkg.dev/$PROJECT_ID/aman-100890534/dockerfile:$SHORT_SHA']
+    args: ['push', 'us-central1-docker.pkg.dev/$PROJECT_ID/aman-100890534/ dockerfile-00003-qjk:$SHORT_SHA']
 
   # Step 3: Deploy the Docker image to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
