@@ -15,7 +15,7 @@ steps:
       - 'deploy'
       - 'dockerfile' 
       - '--image'
-      - 'us-central1-docker.pkg.dev/$PROJECT_ID/aman-100890534/dockerfile-00003-qjk:$SHORT_SHA'
+      - 'us-central1-docker.pkg.dev/$PROJECT_ID/aman-100890534/dockerfile:$SHORT_SHA'
       - '--region'
       - 'us-central1' 
       - '--platform'
