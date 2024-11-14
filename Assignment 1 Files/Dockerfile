@@ -1,5 +1,5 @@
 # Using a lightweight Alpine image with Node.js version 19.7.0 as the base
-FROM node:19.7-alpine
+FROM node:19.8.1-alpine
 
 # Set the default Node environment to production
 ENV NODE_ENV production
